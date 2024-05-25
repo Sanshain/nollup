@@ -28,7 +28,7 @@
     "magic-string": "^0.25.7",
     "mime-types": "^2.1.29",
     "source-map": "^0.5.6",
-    "source-map-fast": "github:Sanshain/source-map#v0.7.x",
+    "source-map-fast": "github:Sanshain/source-map#v0.8.x__research",
     "ws": "^7.5.3"
   },
   "devDependencies": {

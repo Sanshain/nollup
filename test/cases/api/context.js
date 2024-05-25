@@ -1,3 +1,5 @@
+//@ts-check
+
 let { nollup, fs, expect, rollup } = require('../../nollup');
 let path = require('path');
 let MagicString = require('magic-string');
@@ -1320,7 +1322,8 @@ describe ('API: Plugin Context', () => {
         });
     });
 
-    describe ('meta', () => {
+    describe('meta', () => {
+        
         it ('should have rollupVersion', async () => {
             fs.stub('./src/main.js', () => 'export default 123');
 
@@ -1328,7 +1331,7 @@ describe ('API: Plugin Context', () => {
                 input: './src/main.js',
                 plugins: [{
                     transform () {
-                        expect(this.meta.rollupVersion).to.equal('2.70');
+                        expect(this.meta.rollupVersion).to.equal('2.78');
                     }
                 }]
             });

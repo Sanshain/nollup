@@ -1703,7 +1703,7 @@ describe ('API: Plugin Hooks', () => {
                 input: './src/main.js',
                 plugins: [{
                     options (opts) {
-                        expect(this.meta.rollupVersion).to.equal('2.70');
+                        expect(this.meta.rollupVersion).to.equal('2.78');
                         passed = true;
                     }
                 }]
